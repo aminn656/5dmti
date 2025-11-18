@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0b0c1d;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    height: 100vh;
+    width: 100%;
+}
+.header {
+    padding: 80px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4f7df9;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.auth-buttons .btn {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: white;
+    border: 1px solid #4f7df9;
+    transition: background 0.3s;
+}
+
+.auth-buttons .btn:hover {
+    background-color: #4f7df9;
+}
+
+.auth-buttons .btn-primary {
+    background-color: #4f7df9;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 45vh;
+    max-height: 60vh;
+    padding: 0 20px;
+    width: 60%;
+    height: 60%;
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.hero-text {
+    max-width: 800px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    color: #4f7df9;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.button {
+    background-color: #4f7df9;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+}

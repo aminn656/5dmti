@@ -1,0 +1,28 @@
+body{
+    background-color: #222;
+  }
+  .bls{
+    border: 1.5px solid black;
+    border-radius: 3px;
+    box-shadow: 1px 1px 4px;
+  }
+  .bls:hover{
+    transform: scale(1.3);
+    transition: 1s;
+  }
+  .bdn{
+    border: 3px solid darkred;
+    background:linear-gradient(to right,gray,dimgray,gray);
+    border-radius: 15px;
+    border-width: 2px;
+    padding-left:15px;
+    padding-right:15px;
+    padding-bottom: 25px;
+    font-style: italic;
+    color: white;
+    margin-left: 715px;
+    width: 430px;
+  }
+  .padd{
+    margin-right:5px;
+  }
