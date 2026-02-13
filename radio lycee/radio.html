@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="radio.css">
+    <title>radio</title>
+</head>
+
+<body>
+    <header>
+        <img src="img/img10.png" alt="">
+        <h1>Notre Voix dans le Lycée</h1>
+        <p>La radio qui ressemble les élèves</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('Accueil')">Accueil</a></li>
+            <li><a href="#" onclick="showSection('clubs')">Clubs</a></li>
+            <li><a href="#" onclick="showSection('prog')">Programme</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="Accueil" class="section active">
+
+            <section class="hero">
+                <h2 style="color: white;">Bienvenue sur la radio du lycée</h2>
+            </section>
+
+            <h2>Actualités du Lycée:</h2>
+
+            <div class="cards">
+
+                <div class="card1">
+                    <img src="img/img1.jpg" alt="">
+                    <div class="content">
+                        <h3 style="color: white;">Journée sportive:</h3>
+                        <p style="color: white;">Compétitions sportives dans une ambiance conviviale.</p>
+                    </div>
+                </div>
+
+                <div class="card1">
+                    <img src="img/img2.jpg" alt="">
+                    <div class="content">
+                        <h3 style="color: white;">Semaine culturelle:</h3>
+                        <p style="color: white;">Activités artistiques et culturelles au lycée.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <aside>
+                <h2>Chroniques du jour:</h2>
+
+                <div class="box">
+                    <h4>📖 Histoire</h4>
+                    <p>Un élève devient animateur radio.</p>
+                </div>
+
+                <div class="box">
+                    <h4>✏ Poème</h4>
+                    <p>« Le savoir est une lumière »</p>
+                </div>
+            </aside>
+        </section>
+
+        <section id="clubs" class="section">
+            <div class="container clubs-container">
+
+                <div class="club-card">
+                    <div class="club-content">
+                        <h3>Club Radio</h3>
+                        <p>Animation des émissions, interviews et podcasts des élèves.</p>
+                    </div>
+                    <img src="img/img4.png" alt="Studio Radio" onclick="openPage()">
+                </div>
+
+                <div class="club-card">
+                    <div class="club-content">
+                        <h3>Club Science</h3>
+                        <p>Expériences scientifiques et participation aux concours nationaux.</p>
+                    </div>
+                    <img src="img/img8.avif" alt="Laboratoire" onclick="openPage()">
+                </div>
+
+                <div class="club-card">
+                    <div class="club-content">
+                        <h3>Club Théâtre</h3>
+                        <p>Organisation des pièces et spectacles scolaires.</p>
+                    </div>
+                    <img src="img/img9.jpg" alt="Théâtre" onclick="openPage()">
+                </div>
+
+                <div class="club-card">
+                    <div class="club-content">
+                        <h3>Club Informatique</h3>
+                        <p>Programmation, cybersécurité et participation aux compétitions IT.</p>
+                    </div>
+                    <img src="img/img5.jpg" alt="Informatique" onclick="openPage()">
+                </div>
+
+                <div class="club-card">
+                    <div class="club-content">
+                        <h3>Club Sport</h3>
+                        <p>Tournois de football, basketball et activités physiques.</p>
+                    </div>
+                    <img src="img/img6.jpg" alt="Sport" onclick="openPage()">
+                </div>
+
+                <div class="club-card">
+                    <div class="club-content">
+                        <h3>Club Arts</h3>
+                        <p>Dessin, peinture et créativité artistique des élèves.</p>
+                    </div>
+                    <img src="img/img7.jpg" alt="Art" onclick="openPage()">
+                </div>
+
+            </div>
+        </section>
+
+        <section id="prog" class="section">
+            <div class="card">
+                <h3>Lundi</h3>
+                <p>Actualités scolaires - 10h00</p>
+            </div>
+
+            <div class="card">
+                <h3>Mercredi</h3>
+                <p>Débat des élèves - 14h00</p>
+            </div>
+
+            <div class="card">
+                <h3>Vendredi</h3>
+                <p>Musique et détente - 16h00</p>
+            </div>
+
+    </div>
+    </section>
+
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+
+            const sections = document.querySelectorAll('.section');
+
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            const activeSection = document.getElementById(sectionId);
+            if (activeSection) {
+                activeSection.classList.add('active');
+            }
+        }
+
+        function openPage() {
+            window.location.href = "registre.html";
+        }
+    </script>
+
+</body>
+
+</html>
