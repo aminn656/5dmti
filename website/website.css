@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: beige;
+}
+
+#carouselExampleCaptions{
+    padding-top: 50px;
+}
+
+.about{
+    padding-top: 100px;
+}
+
+.row{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.col-lg-4{
+    padding-top: 100px;
+    
+}
+
+.team-card, .footer-class{
+    display: flex;
+    justify-content: center;
+}
+
+.card-title, .card-text, .card-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-class{
+    padding-top: 75px;
+    font-weight: 700;
+}
+
+
